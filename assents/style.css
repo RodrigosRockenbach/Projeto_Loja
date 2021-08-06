@@ -17,9 +17,10 @@ header{
 
 }
 
+
+
 section{
-    padding-left: 20px;
-    padding-bottom: 20px;
+    text-align: center;
 
 }
 
@@ -46,11 +47,6 @@ p{
 
 }
 
-form, input{
-    border: solid 1px #fff;
-
-}
-
 #logo{
     width: 70%;
     padding: 15px;
@@ -70,6 +66,12 @@ form, input{
 
 }
 
+#demo{
+    height: 320px;
+    text-align: center;
+
+}
+
 .cartao{
     background-color: white;
     padding: 10px;
@@ -84,3 +86,8 @@ form, input{
     
 }
 
+.imgCarousel{
+    height: 300px;
+    /*border: solid 1px #000;*/
+
+}

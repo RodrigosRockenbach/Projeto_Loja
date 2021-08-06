@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brisa Esportes</title>
-    <link rel="shortcut icon" href="img/logo.png"></link>
+    <link rel="shortcut icon" href="img/icon.png"></link>
 
     <!-- Boostrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,7 +18,7 @@
 </head>
 <body>
 
-    <header>
+    <header class="container-fluid"> <!--Cabeçalho (Logo e Barra de navegação)-->
         <div class="row">
             <div class="col-sm-4" id="divEsquerda">
                 <img id="logo" src="img/Brisa_logo.png"> <!--Logo da loja-->
@@ -26,7 +26,7 @@
             
             <div class="col" id="divDireita">
                 <nav class="navbar navbar-expand-sm bg-black navbar-black"> <!--Barra de pesquisa-->
-                    <form class="form-inline col-sm-12" action="/action_page.php">
+                    <form class="d-flex justify-content-center col-sm-12" action="/action_page.php">
                         <input class="form-control col-sm-7 mr-sm-2" type="text" placeholder="Search">
                         <button class="btn btn-success" type="submit">Search</button>
                     </form>
@@ -34,7 +34,7 @@
             </div>
         </div>
     </header>
-    <div>
+    <div> <!--Div voltada ao menu-->
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">  
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
@@ -100,11 +100,35 @@
         </nav>
     </div>
 
-    <section class="container-fluid">
+    <article class="container-fluid col-md-12"> <!--Section com o carousel-->
+        <div id="demo" class="carousel slide" data-ride="carousel"> 
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/Brisa_logo.png" class="imgCarousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/Design sem nome (2) (1).png" class="imgCarousel">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/logo.png" class="imgCarousel">
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </article>
+
+    <section class="container-fluid"> <!-- Produtos -->
         <h2>Lançamentos</h2>
-                <div class="col">
+                <div class="d-flex flex-nowrap">
                     <div class="row">
-                        <div class="cartao col-md-2 justify-content-around">
+                        <div class="cartao col-md-2 ">
                             <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
                             <div class="card-body">
                                 <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
@@ -112,7 +136,7 @@
                             </div>
                         </div>
 
-                        <div class="cartao col-md-2 justify-content-around">
+                        <div class="cartao col-md-2">
                             <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
                             <div class="card-body">
                                 <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
@@ -120,7 +144,7 @@
                             </div>
                         </div>
 
-                        <div class="cartao col-md-2 justify-content-around">
+                        <div class="cartao col-md-2">
                             <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
                             <div class="card-body">
                                 <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
@@ -128,7 +152,7 @@
                             </div>
                         </div>
             
-                        <div class="cartao col-md-2 justify-content-around">
+                        <div class="cartao col-md-2">
                             <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
                             <div class="card-body">
                                 <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
@@ -136,7 +160,23 @@
                             </div>
                         </div>
 
-                        <div class="cartao col-md-2 justify-content-around">
+                        <div class="cartao col-md-2">
+                            <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
+                                <h4 class="card-text">R$ 699,99</h4>
+                            </div>
+                        </div>
+
+                        <div class="cartao col-md-2">
+                            <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
+                            <div class="card-body">
+                                <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
+                                <h4 class="card-text">R$ 699,99</h4>
+                            </div>
+                        </div>
+
+                        <div class="cartao col-md-2">
                             <img class="card-img-top" src="img/Produtos/Tenis/nike_air_zoom_pegasus_38.jpg" alt="Card image" style="width: 80%;">
                             <div class="card-body">
                                 <h6 class="card-title">Nike Air Zoom Pegasus 38</h6>
